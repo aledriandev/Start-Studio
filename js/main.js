@@ -17,7 +17,7 @@ function creaPortfolio(){
 		var divPortforlio = document.createElement('div');
 			divPortforlio.setAttribute('class','col-md-4 pd-10');
 		var divPPort = document.createElement('div');
-			divPPort.setAttribute('class','bg-color-0 pd-10');
+			divPPort.setAttribute('class','bg-color-0');
 		var imgP = document.createElement('img');
 			imgP.setAttribute('class','img-responsive');
 			imgP.src = imagenesP[i];
