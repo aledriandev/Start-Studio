@@ -1,0 +1,100 @@
+/*
+COLORES
+Colors in Palette
+COLOR 1 = NARANJA OSCURO 1: #ffc100	(255,193,0)
+COLOR 2 = NARANJA SUPER CHILLOSO: #ffdb00	(255,219,0)
+COLOR 3 = NARANJA OSCURO 2: #ffc102	(255,193,2)
+COLOR 4 = PLOMO OSCURO CASI NEGRO: #020202	(2,2,2)
+COLOR 5 = PLOMO PLOMO CLARO: #584f4f	(88,79,79)
+COLOR 6 = PLOMO POCO OSCURO: 	#85796b	(133,121,107)
+COLOR 7 = PLOMO MUY OSCURO: #1B1B1B  (27,27,27)
+*/
+
+
+.font-kaushan{
+	font-family: 'Kaushan Script';	
+}
+
+.font-Mont{
+	font-family: 'Montserrat';
+}
+
+.font-Roboto{
+	font-family: 'Roboto';
+}
+
+.font-Gentium{
+	font-family: 'Gentium Basic';
+}
+
+.italic{
+	font-weight: italic;
+}
+
+.color-0{ color: white; }
+.color-1{ color: #ffc100;}
+.color-2{ color: #ffdb00;}
+.color-3{ color: #ffc102;}
+.color-4{ color: #020202;}
+.color-6{ color: #85796b;}
+.color-7{ color: #1B1B1B;}
+
+.bg-color-0{ background-color: white; }
+.bg-color-1{ background-color: #ffc100;}
+.bg-color-2{ background-color: #ffdb00;}
+.bg-color-3{ background-color: #ffc102;}
+.bg-color-4{ background-color: #020202;}
+.bg-color-5{ background-color: #eaeaea;}
+.bg-color-6{ background-color: #85796b;}
+.bg-color-7{ background-color: #1B1B1B;}
+
+.pd-lr-0{
+	padding: 0 30px;  
+}
+
+.pd-10{
+	padding: 10px;
+}
+
+.pd-l-10{
+	padding-left: 10px;
+}
+
+.pd-r-10{
+	padding-right: 10px;
+}
+
+.flex-parent{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+ 
+.flex-child{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-vh{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-h{
+  position: absolute;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.pos-relative{
+	position: 	relative;	
+}
+
+.justify-center{
+	justify-content: 	center;	
+}
