@@ -11,6 +11,8 @@ $(document).ready(function(){
 	      $(".nav").removeClass("navfondo");
 	    }
 	});
+
+	iniciar();
 });
 
 var imagenesP = ['img/roundicons.png', 'img/startup-framework.png', 'img/treehouse.png', 'img/golden.png', 'img/escape.png', 'img/dreams.png'];
@@ -22,6 +24,8 @@ var nameTeam = ['Kay Garland', 'Larry Parker', 'Diana Pertersen'];
 var cargoTeam = ['Lead Developer', 'Lead Marketer', 'Lead Developer'];
 var team = $('#img-team');
 
+
+//crea lasimagenes del portafolio
 function creaPortfolio(){
 	for (var i = 0; i < imagenesP.length; i++) {
 		var divPortforlio = document.createElement('div');
@@ -40,7 +44,7 @@ function creaPortfolio(){
 		portfolio.append(divPortforlio);
 	}
 }
-
+//crea lasimgenes Team
 function creaTeam(){
 	for (var i = 0; i < imagenesTeam.length; i++) {
 		var divTeam = document.createElement('div');
@@ -65,5 +69,29 @@ function creaTeam(){
 		divTeam.appendChild(divTextTeam);
 		divTeam.appendChild(divIconos);
 		team.append(divTeam);
+	}
+}
+
+//Validacion del formulario
+function iniciar(){
+	$('span.help-block').hide();
+	$('#enviar').click(validacion);
+}
+
+function validacion(){
+	validarName();
+}
+
+/*VALIDACION NOMBRE*/
+function validarName(){
+var name = document.getElementById('name').value;
+	if( name == null || name.length == 0 || /^\s+$/.test(name) ) {
+	  $('#name').parent().attr('class','form-group has-error');
+	  $('#name').parent().children('span').text('Debe ingresar algun caracter').show();  
+	  return false;
+	}else if( !(/^\d{2}[A-Z]$/.test(name)) ) {
+	  $('#name').parent().attr('class','form-group has-error');
+	  $('#name').parent().children('span').text('Debe ingresar solo letras').show();  
+	  return false;
 	}
 }

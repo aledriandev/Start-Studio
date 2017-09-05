@@ -186,15 +186,22 @@
       <form action="">
         <div class="row">
           <div class="col-md-6">
-            <input type="text" placeholder="YOUR NAME">
-            <input type="text" placeholder="YOUR E-MAIL">
-            <input type="text" placeholder="YOUR PHONE">
+            <div class="form-group">
+              <input id="name" class="form-control" type="text" placeholder="YOUR NAME">
+              <span class="help-block">Validar</span>
+            </div>
+            <div class="form-group">
+              <input id="email" class="form-control" type="text" placeholder="YOUR E-MAIL">
+            </div>
+            <div class="form-group">
+              <input id="phone" class="form-control" type="text" placeholder="YOUR PHONE">
+            </div>
           </div>
           <div class="col-md-6">
-            <textarea name="" id="" cols="30" rows="7" placeholder="YOUR MESSAGE"></textarea>
+            <textarea id="message" class="form-control"  name="" id="" cols="30" rows="7" placeholder="YOUR MESSAGE"></textarea>
           </div>
         </div>
-        <button type="submit" class="color-0 bg-color-2"><b>SEND MESSAGE</b></button>
+        <button id="enviar" class="color-0 bg-color-2"><b>SEND MESSAGE</b></button>
       </form>
     </div>
   </section>
