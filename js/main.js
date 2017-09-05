@@ -2,7 +2,6 @@ $(document).ready(function(){
 	creaPortfolio();
 	creaTeam();
 
-
 	$(window).scroll(function(){
 		if ($("#navHeader").offset().top > 0) {
 	      $("#navHeader").addClass("navFondo");
@@ -53,11 +52,11 @@ function creaTeam(){
 			divTextTeam.innerHTML = "<p class='font-Mont'><b>"+nameTeam[i]+"</b></p><p><em>"+cargoTeam[i]+"</em></p>";
 		var divIconos = document.createElement('div');
 		var iconoT = document.createElement('i');
-			iconoT.setAttribute('class','fa fa-twitter fa-3x color-0 bg-color-4');
+			iconoT.setAttribute('class','fa fa-twitter color-0 bg-color-4');
 		var iconoF = document.createElement('i');
-			iconoF.setAttribute('class','fa fa-facebook fa-3x color-0 bg-color-4 pd-lr-30');
+			iconoF.setAttribute('class','fa fa-facebook color-0 bg-color-4 pd-lr-30');
 		var iconoI = document.createElement('i');
-			iconoI.setAttribute('class','fa fa-linkedin fa-3x color-0 bg-color-4');
+			iconoI.setAttribute('class','fa fa-linkedin color-0 bg-color-4');
 
 		divIconos.appendChild(iconoT);
 		divIconos.appendChild(iconoF);
