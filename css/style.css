@@ -16,7 +16,7 @@ COLOR 7 = PLOMO MUY OSCURO: #1B1B1B  (27,27,27)
 
 *{
 	box-sizing: border-box;
-	outline: 1px solid red;
+	/outline: 1px solid red;
 	margin:0 auto;
 	padding: 0;
 }
@@ -76,7 +76,7 @@ nav ul li a{
     color: black;
 }
 
-section{
+section:not(#team){
 	padding: 100px 0;
 }
 
@@ -95,6 +95,12 @@ img{
 	width: 100% !important,
 }
 
+#team-names{
+	padding: 100px 0;
+}
+#auspicio{
+	padding: 50px 0;
+}
 
 #services i{
 	font-size: 	400%;
