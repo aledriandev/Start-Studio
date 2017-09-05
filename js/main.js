@@ -1,6 +1,17 @@
 $(document).ready(function(){
 	creaPortfolio();
 	creaTeam();
+
+
+	$(window).scroll(function(){
+		if ($("#navHeader").offset().top > 0) {
+	      $("#navHeader").addClass("navFondo");
+	      $(".nav").addClass("navfondo");
+	    } else {
+	      $("#navHeader").removeClass("navFondo");
+	      $(".nav").removeClass("navfondo");
+	    }
+	});
 });
 
 var imagenesP = ['img/roundicons.png', 'img/startup-framework.png', 'img/treehouse.png', 'img/golden.png', 'img/escape.png', 'img/dreams.png'];

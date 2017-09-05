@@ -64,6 +64,10 @@ COLOR 7 = PLOMO MUY OSCURO: #1B1B1B  (27,27,27)
 	padding-right: 10px;
 }
 
+.mt-0{
+  margin-top: 0;
+}
+
 .flex-parent{
   display: -ms-flex;
   display: -webkit-flex;
